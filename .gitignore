@@ -1,0 +1,19 @@
+# Explicit publication allowlist. Keep all runtime/private data elsewhere.
+*
+!.gitignore
+!README.md
+!LICENSE
+!SECURITY.md
+!extension/
+!extension/manifest.json
+!extension/security.js
+!extension/background.js
+!extension/content.js
+!extension/panel.css
+!extension/popup.html
+!extension/popup.js
+!scripts/
+!scripts/check_publication.py
+!tests/
+!tests/security.test.js
+!tests/filler.test.js

@@ -1,0 +1,54 @@
+{
+  "manifest_version": 3,
+  "name": "Jobkit Autofill",
+  "version": "0.7.0",
+  "description": "Fill ATS forms and learn answers only after you click Fill + Learn; review before manual submission.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:8765/*",
+    "https://boards.greenhouse.io/*/jobs/*",
+    "https://job-boards.greenhouse.io/*/jobs/*",
+    "https://boards.greenhouse.io/embed/job_app*",
+    "https://job-boards.greenhouse.io/embed/job_app*",
+    "https://jobs.lever.co/*",
+    "https://jobs.ashbyhq.com/*",
+    "https://stripe.com/careers/*",
+    "https://www.pinterestcareers.com/jobs/*",
+    "https://www.pinterestcareers.com/job/*",
+    "https://discord.com/careers/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://boards.greenhouse.io/*/jobs/*",
+        "https://job-boards.greenhouse.io/*/jobs/*",
+        "https://boards.greenhouse.io/embed/job_app*",
+        "https://job-boards.greenhouse.io/embed/job_app*",
+        "https://jobs.lever.co/*",
+        "https://jobs.ashbyhq.com/*",
+        "https://stripe.com/careers/*",
+        "https://www.pinterestcareers.com/jobs/*",
+        "https://www.pinterestcareers.com/job/*",
+        "https://discord.com/careers/*"
+      ],
+      "js": [
+        "security.js",
+        "content.js"
+      ],
+      "css": [
+        "panel.css"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ],
+  "action": {
+    "default_title": "Jobkit",
+    "default_popup": "popup.html"
+  }
+}

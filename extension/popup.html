@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { font-family: system-ui; width: 300px; padding: 12px; margin: 0; }
+    button { width: 100%; margin-top: 8px; padding: 8px; cursor: pointer; }
+    .muted { color: #666; font-size: 12px; margin-top: 8px; }
+    label { display: flex; align-items: center; gap: 6px; margin-top: 10px; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <h3 style="margin:0 0 8px">Jobkit</h3>
+  <div id="status" class="muted">Click Connect API to connect locally</div>
+  <label for="ownResume">Your resume (PDF, up to 4 MiB)</label>
+  <input type="file" id="ownResume" accept="application/pdf,.pdf" />
+  <div id="resumeStatus" class="muted">No personal resume selected</div>
+  <button id="removeResume">Remove my saved resume</button>
+  <p class="muted">Saved in this browser only. On a job page, click Attach my resume to share it with that employer.</p>
+  <button id="connect">Connect API</button>
+  <button id="openLast">Open last prepared job</button>
+  <button id="clearData">Clear extension cache and API session</button>
+  <label>
+    <input type="checkbox" id="semiAuto" checked />
+    Show Submit now after filling
+  </label>
+  <p class="muted">Open an application, then click Fill + Learn when you are ready. Jobkit fills and learns only after that click; review the form before submitting.</p>
+  <script src="popup.js"></script>
+</body>
+</html>

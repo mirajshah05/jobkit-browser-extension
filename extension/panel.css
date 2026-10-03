@@ -1,0 +1,99 @@
+#jobkit-panel {
+  position: fixed;
+  top: 80px;
+  left: 16px;
+  width: 280px;
+  background: #1a1a2e;
+  color: #eee;
+  border-radius: 8px;
+  padding: 12px;
+  z-index: 2147483646;
+  font-family: system-ui, sans-serif;
+  font-size: 13px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+}
+
+.jobkit-header {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+#jobkit-fill, #jobkit-attach-resume {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  background: #4361ee;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.jobkit-review {
+  margin-top: 8px;
+  padding: 8px;
+  background: #2d2d44;
+  border-radius: 6px;
+}
+
+.jobkit-review.hidden {
+  display: none;
+}
+
+#jobkit-countdown {
+  font-size: 12px;
+  margin-bottom: 8px;
+  color: #ffd166;
+}
+
+.jobkit-review-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.jobkit-review-actions button {
+  flex: 1;
+  padding: 6px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+#jobkit-cancel-submit {
+  background: #555;
+  color: #fff;
+}
+
+#jobkit-submit-now {
+  background: #06d6a0;
+  color: #111;
+}
+
+.jobkit-flag {
+  background: #5c3d2e;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin: 4px 0;
+  font-size: 11px;
+}
+
+.jobkit-note {
+  font-size: 10px;
+  opacity: 0.7;
+  margin-top: 8px;
+}
+
+#jobkit-iframe-badge {
+  position: fixed;
+  bottom: 12px;
+  left: 12px;
+  background: #4361ee;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-family: system-ui, sans-serif;
+  font-size: 11px;
+  z-index: 2147483646;
+  pointer-events: none;
+}
